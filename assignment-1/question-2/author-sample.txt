@@ -1,0 +1,7 @@
+{"author":"Sharīf Qāsim","book":"al- Rabīʻ al-manshūd"}
+{"author":"Nāṣir Nimrī","book":"Adīb ʻAbbāsī"}
+{"author":"Sharīf Qāsim","book":"Asmāʼ Allāh al-ḥusná al-wāridah fī muḥkam kitābih"}
+{"author":"Rafiah Salim","book":"al- Jabhah al-sharqīyah wa-maʻārikuhā fī ḥarb Ramaḍān"}
+{"author":"Rafiah Salim","book":"Taʻlīm fī al-Baḥrayn"}
+{"author":"Sharīf Qāsim","book":"The Ramadan war, 1973"}
+{"author":"Sharīf Qāsim","book":"Aḥkām al-imāmah wa-al-iʼtimām fī al-ṣalāh"}

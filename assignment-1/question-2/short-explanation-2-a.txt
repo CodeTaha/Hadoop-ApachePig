@@ -1,0 +1,12 @@
+Question 2. a)
+
+Please add your 6-10 sentence explanation to below in this file.
+=================================================================
+The Mapper first gets a line by line input in Json format of author and book. By using googles Gson library, we manipulate the JSOn files in Java. The mapper fetched the author and the book and creates tuples of (key,value) as (author, book).
+The reducer then takes as input these tuples and creates a JsonObject first of {"book": "book name"}. This JsonObject is then added into a JsonArray as {"books":[{"book": "book name"},{"book": "book name"}..]}.
+Finally the output is created by creating a new JsonObject have {"author":"author name", "books":[{"book": "book name"},{"book": "book name"}..]}
+
+For using the external Jar file of google gson-2.4.jar , I added a new folder in $HADOOP_HOME names external_jars. In that I saved the gson-2.4.jar . The in hadoop-env.sh I added the following lines in the end
+export HADOOP_CLASSPATH=/usr/local/hadoop/extra_jars/gson-2.4.jar:$HADOOP_CLASSPATH
+
+Then I restared hadoop dfs and yarn.

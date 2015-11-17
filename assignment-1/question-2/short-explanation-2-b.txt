@@ -1,0 +1,5 @@
+Question 2. b)
+
+Please add your 6-10 sentence explanation to below in this file.
+=================================================================
+The concept is same as the 2-a. The only difference is that a 3rd arg is passed while running the hadoop job which gives the name of the Author. in the reduce phase, the reducer checks if the author name equals to the key passed. If yes, only then it does context.write().

@@ -1,0 +1,22 @@
+Question 1. a)
+
+Please add your 6-10 sentence explanation to below in this file.
+=================================================================
+1. First we compile WordCount.java by using tha command
+
+hadoop com.sun.tools.javac.Main WordCount.java
+
+2. We then create a jar file by compiling all the java classes into a single jar
+jar cf wc.jar WordCount*.class
+
+3. Now before running the program, we need to put the file vanrikki-stool.txt into the haddop file system.
+
+hadoop fs -copyFromLocal scalable_cloud/assignment-1/question-1/vanrikki-stool.txt /assignment/vanrikki-stool.txt
+
+4. Running the WordCount job on hadoop
+
+hadoop jar wc.jar WordCount /assignment/question1/vanrikki-stool.txt /assignment/question1/output
+
+5. Copy output from hdfs to local output-stool-a
+
+hadoop fs -copyToLocal /assignment/question1/output output-stool-a/

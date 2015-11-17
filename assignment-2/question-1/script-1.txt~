@@ -1,0 +1,16 @@
+# Load user-links-small.txt
+user_links = LOAD '/home/hduser/scalable_cloud/assignment-2/data/user-links-very-small.txt' USING PigStorage() as (userA:int, userB:int);
+
+# Group by first user's friends
+group_by_userA = group user_links by userA;
+
+# count the friends of each user
+count_by_userA = FOREACH group_by_userA GENERATE group, COUNT(user_links);
+
+# group users with counts
+group_by_count = GROUP count_by_userA by $1;
+
+# count the number of bags in each degree
+final_count = FOREACH group_by_count GENERATE group, COUNT(count_by_userA.$1);
+
+

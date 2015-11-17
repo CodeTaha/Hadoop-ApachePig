@@ -1,0 +1,18 @@
+Question 1. b)
+
+Please add your 6-10 sentence explanation to below in this file.
+=================================================================
+1. First we compile TopCount.java by using tha command
+
+hadoop com.sun.tools.javac.Main TopCount.java
+
+2. We then create a jar file by compiling all the java classes into a single jar
+jar cf wc.jar WordCount*.class
+
+3. Running the WordCount job on hadoop
+
+hadoop jar tc.jar TopCount /assignment/question1/vanrikki-stool.txt /assignment/question1/output-b
+
+4. Copy output from hdfs to local output-stool-a
+
+hadoop fs -copyToLocal /assignment/question1/output-b output-stool-b/

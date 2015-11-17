@@ -1,0 +1,5 @@
+Question 1.
+
+Please add your script and your run log to this file.
+=====================================
+user_links = LOAD '/home/hduser/scalable_cloud/assignment-2/data/user-links-small.txt' USING PigStorage() as (userA:int, userB:int);
